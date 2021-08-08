@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            量词
+            -通过两次可以检查一个内容出现的次数
+            -两次只对它前边出的一个内容有作用
+            -{n}正好出现n次
+            -{n,m}出现n-m次
+            -{m,}m次以上
+            - +至少一个，相当于{1，}
+            - * 0个或多个，相当于{0,}
+            - ? 0个人或一个，相当于{0，1}
+            - *
+        */
+        //创建一个正则表达式检查一个字符串中是否出现aaa
+        //var reg = /a{3}c/;
+        //检查一个ababab
+        //var reg = /(ab){2}/;
+
+        /*
+            检查一个字符串中是否谊a开头
+            ^表示开头
+            $表示结尾
+            如果在正则表达式中同时使用^ 和 $,则要求字符串必须符合正则表达式
+            reg = /^a$/;
+            console.log(reg.test("a"));
+
+            2.创建一个正则表达式，用来检查一个字符串是否是以合法的手机号
+                手机号的规则
+                    1.必须时以1开头
+                    2.第二位3-9的数字
+                    3.三维以后任意开头
+                        ^1 [3-9] [0-9]{9}$
+
+            3.检查一个字符串中是否含有.
+                .   表示任意字符
+                在正则表达式使用\作为转义符号
+                \.来表示
+                \\表示\
+                var reg = /\./;
+                console.log(reg.test(reg));
+            注意：使用构造函数时，由于他的参数是一个字符串
+            而\ 是一个字符串转义符号，如果要使用\，则需要使用\\来表示
+                  var reg = new RegExp("\\.");
+
+
+            4.  -\w任意字母，数字和_ [A-z0-9]
+                -\W 除了任意字母，数字和_ [^A-z0-9]
+                \d 任意的数字[0-9]
+                \D 除了数字[0-9]
+                \s空格
+                \S除了空格
+                \b单词边界
+                \B除了单词边界
+                var reg = /\bworld\b/;
+                console.log(reg.test("hello worldre"));
+
+            5.接受一个用户的输入
+                //去除字符串中的前后的空格
+            //去除空格就是使用"""来替换空格
+            str = str.replace(/\s/g,"")
+            console.log(str);
+
+            匹配开头和结尾的空格
+            /^\s*|\s*$/g
+
+
+            
+        */
+        //var reg = /ab{3,}c/;
+       // reg = /^a$/;
+    /*var phoneStr = "13067890123";
+        var phoneReg = /^1[3-9][0-9]{9}$/;
+        console.log(phoneReg.test("phoneStr"));*/
+        /*var reg = /\./;
+        var reg = /\./;
+
+        var reg = new RegExp("\\.");
+        console.log(reg.test("#$/5$^%."));
+        console.log(reg);
+        var reg = /\bworld\b/;
+        console.log(reg.test("hello worldre"));*/
+        var str = "     he   llo    ";
+        //去除字符串中的前后的空格
+        //去除空格就是使用"""来替换空格
+        str = str.replace(  /^\s*|\s*$/g,"")
+        console.log(str);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

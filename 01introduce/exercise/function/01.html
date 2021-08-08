@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            定义一个函数，如果是偶数，就返回一个true，否则就返回一个fasle
+
+            定义一个函数，根据半径计算一个圆的面积，并返回计算结果
+
+            创建一个函数，可以在控制台输出一个人的信息
+            可以输出 name age gender address
+
+        */
+        
+        /*function ou(num){
+                return num % 2 ==  0;
+            }
+            var result = ou(15);
+            console.log(result);*/
+
+        /*function acreage(radius){
+            return 3.14*radius*radius;
+        }
+        result = acreage(5);
+        console.log(result);*/
+        function sayhello(o){
+            console.log("我叫"+ o.name + "今年"+o.age + "是一个"+o.gender+ "住在"+o.address)
+        }
+        var obj = {
+            name :"孙悟空",
+            age :"18",
+            gender:"男",
+            address:"花果山"
+        };
+        sayhello(obj);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

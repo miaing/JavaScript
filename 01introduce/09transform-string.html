@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        将其他的数据类型转换为string
+        方法一：
+            调用被转换数据的.totring()方法
+            使用.totring()方法不会影响原变量，他会将结果返回
+            但是,null和nunber没有.totring()方法，如果使用该方法，结果会出错
+
+        方法二：
+            调用string()方法，将被调用数据作为参数转换为函数
+            boolean 和 nunber使用该方法实际就是调用.totring()方法
+            null和undefined,就不会调用.totring()方法
+                null直接转换为"null"
+                undefined直接转为""undefined"
+        */
+       /* var a = 123;
+        //a = a.toString();
+        a= a.tostring(null);
+        console.log( typeof a);
+        console.log(a);*/
+        var b =456;
+        b = String(b);
+        console.log(typeof b);
+        console.log(b);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

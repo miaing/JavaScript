@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            1.concat()可以连接两个或多个数组，并将新的数组返回
+            该方法不会对原数组产生影响
+
+            2.join()不会将数组转换为字符串
+                该方法不会对元数据产生影响，而是将转换后的字符串作为结果返回
+                在join中可以指定一个字符串作为参数，这个字符串将会成为数组中元素的连接符
+                    如果不设置则会默认为，隔开
+
+            3.reverse()该数组用来反转数组
+                会对原数组产生影响
+
+            4.sort()可以用来对数组中的元素进行排序
+                也会对原数组产生影响,默认会按照Vnicode编码进行排序
+
+                我们可以自己指定排序的顺序
+                    我们可以在sort()中添加一个回调函数，来指定排序规则
+                        回调函数需要定义两个参数
+                        浏览器会分别使用数组中的元素作为参数取调用回调函数
+                        使用那个元素调用不确定，但是a一定b的前面
+
+                    -浏览器会根据回调函数的返回值来决定元素的位置
+                    如果返回一个大于0 的值，则元素会交换位置
+                    如果返回一个小鱼0的值，则位置不会变
+                    
+        */
+       //var arr =["孙悟空","白龙马","唐僧",];
+       //var arr2 =["猪八戒","沙和尚","白骨精"];
+       //var result = arr.concat(arr2);
+        //var result = arr.join("-");
+        //arr.reverse();
+        /*var arr=["a","d","b","c"]
+        arr.sort();
+       console.log( arr);*/
+       var arr=[5,4];
+       arr.sort(function(a,b){
+           //升序排序
+           return a-b;
+           //降序排序 b-a
+
+       })
+       console.log(arr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

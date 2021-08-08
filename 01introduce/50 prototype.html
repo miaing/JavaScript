@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+
+        */
+       function Myclass(){
+
+       }
+       Myclass.name = "我是原型中的名字";
+       var mc = new Myclass();
+       //使用in检查对象中是否有某个属性时，如果对象中没有，原型对象中有，也会返回true
+       //console.log("name" in mc);
+       //可以使用hasOwnProperty()来检查对象自身中是否含有该属性
+       //使用该属性时，只有对象中本身有属性时，才会返回true
+       console.log(mc.hasOwnProperty("age"));
+       /*
+        原型对象也是对象，所以他也有原型
+        当我们使用一个对象的属性或方法时，会先在自身中寻找
+        自身中没有则会在原型中寻找，原型中有，直接使用，
+        要是原型中也没有，则在原型的原型中寻找，直到找到object的对象的原型
+        object对象没有原型，如果object中仍然没有，则会返回undefined
+       */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            构造函数的修改：
+             创建一个Person构造函数，在这个构造函数中，为每一个对象都添加一个sayHello方法
+                目前我们的方法在构造函数里面，说明构造函数每执行一次，就会创建一个新的方法
+                也会所由的sayHello都是唯一的
+
+                可以是所有的对象共享一个方法
+        */
+        function Person(name,gender,age){
+            this.name = name;
+            this.gender = gender;
+            this.age = age;
+            this.sayHello = fun
+       }
+        function fun(){
+                alert(this.name);
+            };
+        var per = new Person("太上老君","男",800);
+        var per2 = new Person("太上老君","男",800);
+        console.log(per);
+        console.log(per2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

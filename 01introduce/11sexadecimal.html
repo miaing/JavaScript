@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            在js中如果需要表示十六进制的数值，则需要以0x开头
+                若需要以八进制来表示，则需要以0开头
+                若需要表示二进制的数值，则需要以0b来开头
+
+        */
+       //像""070"这样的字符串，浏览器可能会当成十进制的数值来表示，也有可能当成八进制的数值来表示
+       var a =070;
+      // a=Number(a);
+      //这时可以通过parseInt()来固定浏览器的固定进制
+        a=parseInt(a,10)
+       console.log(typeof a);
+       console.log(a);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box03{
+            width: 450px;
+            height: 300px;
+            background-color: yellow;
+           
+          
+            /*border: red solid 20px;*/
+          
+
+        }
+        #box02{
+            width: 100px;
+            height: 200px;
+            background-color:rgb(155, 155, 182);
+            overflow: auto;
+            /*padding: 20px;
+            border: red solid 20px;*/
+          
+
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var box01 = document.getElementById("box01");
+            var btn01 = document.getElementById("btn01");
+            btn01.onclick = function(){
+                /*
+                 -clientHeight
+                 -clientWidth
+                    获取元素的可见高度和宽度,包括内容区和内边距
+
+                -offsetHeight
+                -offsetWidth
+                    获取元素的可见高度和宽度,包括外边距
+                -offsetParent
+                    获取当前元素理他最近的定位父元素
+
+                -offsetLeft
+                    当前元素相对于其定位元素的水平偏移量
+                -offsetTop
+                    当前元素相对于其定位元素的垂直偏移量
+
+                -scrollWight
+                -scrollHeight
+                    可以获取元素整个滚动去的高度和宽度
+                -scrollLeft
+                -scrollTop
+                    可以获取水平活垂直滚动条的高度和宽度
+
+                当满足scrollWidth-scrollLeft == clientWidth,
+                    说明水平滚动条滚动到底
+                当满足scrollHeight-scrollTop == clientHeight,
+                    说明垂直滚动条滚动到底
+                
+                */
+                //获取元素的可见高度和宽度
+                //alert(box03.scrollHeight);
+                alert(box02.scrollLeft);
+                
+            };
+        };
+    </script>
+</head>
+<body>
+    <button id = "btn01">请点击一下</button>
+    <br/><br/>
+    <div id="box01" >
+        <div id="box02" style="position: relative;" >
+            <div id="box03"></div>
+        </div>
+    </div>
+</body>
+</html>

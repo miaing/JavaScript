@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            关系运算符：比较符号两边之间的大小关系
+                > 大于 如果左边的值大于右边的值成立，则会输出true,否则是false
+                等价的关系运算符还有< 、<= 、>=
+
+                当数值与非数值进行比较时，非数值要先转换为数值，然后再进行比较
+                注意：当两个值都是字符串时，这时不会将字符串转换成数字，而是要分别比较字符串的Unicode编码
+                        比较字符编码时，是一位一位的进行比较，
+                        若两位编码一样时，则比较下一位
+        */
+       //任何值与NaN比较时都是false
+       var a = NaN>"6";
+       console.log(a);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

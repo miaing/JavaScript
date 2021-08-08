@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            js为我们提供了三种逻辑运算
+
+            ！非 可以用来对一个值进行非运算
+             所谓非运算是指值对于一个布尔值进行反操作
+             如果对于一个值进行两次取反，他不会发生变化
+            如果对非布尔值进行运算，则会将其转换为布尔值，然后再取反
+                根据这个特点，可以对任意的值转换为布尔值
+                    可以对一个任意的数据类型取两次反，来将其转换为布尔值
+                    原理与Boolean()相同
+
+            && 与
+                他可以对符号两侧的值进行与运算并返回结果
+                    运算规则：
+                        当两个值都是true的时候，才会返回true
+                        只有一个false时，就会返回flase
+                        -js中的‘与’属于短路的与
+                         当第一个值是false,就不会看第二个值
+
+            || 或
+                 他可以对符号两侧的值进行或运算并返回结果
+                    运算规则：
+                        当两个值都是false的时候，才会返回false
+                        只有一个true时，就会返回true
+                        -js中的‘或’属于短路的与
+                         当第一个值是true,就不会看第二个值
+
+
+        */
+       //var a = 123;
+       //a=!!a;
+       var a= true||false;
+       console.log(a);
+       console.log(typeof a);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

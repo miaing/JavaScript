@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            当我们直接在页面中打印一个对象时，事实上是输出的对象的toString()的返回值
+            如果我们不希望在输出的对象时不输出[objget objget],可以为对象添加一个toString()方法
+
+        
+        */
+        function Person(name, gender, age){
+            this.name = name;
+            this.gender = gender;
+            this.age = age;
+        };
+        Person.prototype.toString = function(){
+            return "Person[name="+this.name+",gender="+this.gender+",age="+this.age+"]";
+        };
+
+        
+        var per = new Person("孙悟空","男",89);
+        var per2 = new Person("白骨精","女",678);
+        /*per.toString = function(){
+            return "Person[name="+this.name+",gender="+this.gender+",age="+this.age+"]";
+        };*/
+        var result = per.toString();
+        //var result = per2.toString();
+        console.log(per);
+        console.log(per2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

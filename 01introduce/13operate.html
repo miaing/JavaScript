@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            算数运算符
+                当对非Number类型的值做算数运算时，都要将值转换为Number类型的值然后再做运算
+                任何值和NnN做运算都会得NaN
+
+                + 1、可以对两个值进行加法运算，并将结果返回
+                  2、如果对字符串进行进行加法运算，则会做拼串，两个字符串拼接成一个字符串，并返回
+                  3、任何值和字符串做相加时，都需将其转化为字符串，然后再与字符串做拼串
+                - 可以对两个值做减法运算，并将结果返回
+                * 乘法运算
+                % 取模运算
+                / 除法运算
+
+
+                任何值和字符串相加都会转换为字符串，并做拼串操作
+                我们可利用这一点来将任何值的数据类型转换为String
+                可以通过为任意的数据类型+一个""来使其转换为一个String
+                这是一种隐式的类型转化，由浏览器自动完成，实际上他也是调用了String()
+        */
+       //var a = "2"+1223+2;
+       var a=34;
+        a = +"";
+       console.log(a);
+       console.log (typeof a);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

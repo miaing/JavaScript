@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./script.js/script.js">
+
+    </script>
+    <script type="text/javascript">
+        alert("直接填写js文件");
+    </script>
+
+</head>
+<body>
+    
+    <!--
+        1、可以将Js写在标签的onclick属性中，
+        2、也可以将js写入超链接的href属性中
+        3、虽然可以将js写入标签的属性中，但是这导致了结构与行为的苟合，不利于维护，
+        4、还可以将js写入script标签中
+    -->
+    
+    <button onclick="alert('你可以点击我');">可以点我</button>
+    <a href="javascript:alert('超链接的href属性');">第二次点击</a>
+</body>
+</html>

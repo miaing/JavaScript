@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            方法二：
+                if(条件表达式){
+                    语句。。。
+                }else{
+                    语句。。。
+                }
+                但语句执行时，首先会对条件表达式进行求值判断
+                  如果表达式的值是true，则会直接执行if后的语句
+                  如果表达式的值是false，则会执行else的语句
+
+            方法二：
+                if(条件表达式){
+                    语句。。。
+                }else if{
+                    语句。。。
+                }else if{
+                    语句。。
+                }else if{
+                    语句。。。
+                }else{
+                    语句
+                }
+             
+                
+                当执行该语句时，会从上到下依次对条件表达式进行求解
+                    当值为true，则会执行if后面的语句
+                  当值为false时，则会继续对下一个条件表达式进行求值判断
+                  如果所有的条件表达式的值都不为true时，则会执行最后的else
+
+        */
+       var a = 42;
+       if(a<20){
+           alert("这是if语句的测试")
+       }else if(a<30){
+           alert("这是值为false会出现的值2")
+       }else if(a<40){
+           alert("这是值为false会出现的值3")
+       }else if(a<50){
+           alert("这是值为false会出现的值4")
+       }else if(a<60){
+           alert("这是值为false会出现的值5")
+       }else if(a<70){
+           alert("这是值为false会出现的值6")
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

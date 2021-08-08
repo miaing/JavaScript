@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        /*
+            在js中变量都是保存在栈内存，值与值之间是相互独立的，
+            修改一个变量不会影响到另一个变量
+
+              而对象是保存在一个堆内存中，每创建一个新的变量就会，就会开辟出一个新的内存地址
+            而变量保持的对象就是内存地址， 如果一个变量保存的是同一个内存地址
+            当一个变量改变其属性值时，另一个变量也会发生变化
+
+            当比较两个基本数据类型，就是比较值，值相同则为true
+
+            比较引用数据类型时，比较的是对象的内存地址
+            即使对象相同，但是内存地址不同，也会返回false
+        */
+        /*var obj=new Object();
+        obj.name="孙悟空";
+        var obj2=new Object();
+        obj2=obj;
+        //修改obj的值
+        obj.name="猪八戒";
+        console.log(obj.name);
+        console.log(obj2.name);*/
+        var a =1223;
+        var b=a;
+        a++;
+        console.log(a);
+        console.log(b);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

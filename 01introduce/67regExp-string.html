@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            1.split()可以将一个字符串拆分成数组
+            方法中可以传递一个正则表达式作为参数，这样方法将会根据正则表达式取拆分字符串
+            这个方法即使不指定全局匹配，也会全部拆分
+            2.search()
+                可以搜索字符串中是否含有指定内容
+                如果收缩得到，则会返回第一次出现的索引，如果搜索不到，则会返回-1
+                他可以接受一个正则表达式作为参数，然后根据正则表达式取搜索字符串
+                search只会查找第一个，即使设置全局匹配也没用
+            3.match()
+                可以根据正则表达式，从一盒字符串中将符合条件的内容提取出来
+                -默认情况下，浏览其只会找到第一个符合条件的内容，找到之后就会停止搜索
+                -我们可以设置正则表达式位全局匹配模式，这样就会匹配到所有内容
+                可以位一个正则表达式，设置多个匹配全局模式，且顺序无所谓
+            4.replace()
+                可以将字符串中的指定的内容替换位新的内容
+                -参数：
+                    1.被替换的内容，可以接受一个正则表达式作为参数
+                    2。新的内容
+                默认只会替换第一个
+        */
+       //var str = "hello, adc,afc,asc";
+       var str = "1fd3ft5g6yh7u";
+       result =str.replace(/[a-z]/g , "");
+       //result = str.match(/[a-z]/g);
+       console.log(result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

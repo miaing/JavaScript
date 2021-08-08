@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            while循环语句
+                用法：
+                    while(条件表达式){
+                        语句。。
+                    }
+
+                执行：
+                    当执行while时，首先会对条件表达式进行求值判断
+                     如果值为true，则会执行后面的循环体
+                     循环体执行完毕之后，再对条件表达式进行求值判断，然后再执行，以此反复执行
+                     如果值为false，则会立即停止循环体
+                     
+                    用法二：
+                    do{
+                        语句
+                    }while(条件语句)
+
+                    执行：
+                        do。。。while语句在执行时。先执行循环体，
+                        再对条件表达式进行值的判断
+
+                        如果判断的值为true，则会继续执行循环体，以此类推
+                        如果判断的值为false，则会直接结束循环
+
+                        两者最大的不同是while是先判断后执行
+                        而do...while是先执行后判断
+
+                        因此do...while能保证程序至少能执行一次，而while则不能
+
+        */
+       /*var n=0;
+       while(true){
+           alert(n++);
+           if(n==10){
+            break;
+           }
+          
+       }*/
+       //设置循环体有三个步骤
+       //1、首先设置一个初始值
+       var n=0;
+       //2、设置一个条件表达式
+       while(n<10){
+           //alert(n);
+           //3、更新一个更新表达式，每次更新初始化变量
+           //n++;
+           document.write(n++ +"<br/>");
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
